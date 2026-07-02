@@ -33,5 +33,17 @@ int main()
 	// UTC 日期
 	std::cout << boost::gregorian::day_clock::universal_day() << std::endl;
 
+	std::cout << "-----------创建特殊日期-----------" << std::endl;
+	boost::gregorian::date d8(boost::gregorian::neg_infin); // 负无限日期
+	std::cout << "负无限日期: " << d8 << std::endl;
+	boost::gregorian::date d9(boost::gregorian::pos_infin); // 正无限日期
+	std::cout << "正无限日期: " << d9 << std::endl;
+	boost::gregorian::date d10(boost::gregorian::not_a_date_time); // 无效日期
+	std::cout << "无效日期: " << d10 << std::endl;
+	boost::gregorian::date d11(boost::gregorian::max_date_time); // 最大可能日期
+	std::cout << "最大可能日期: " << d11 << std::endl;
+	boost::gregorian::date d12(boost::gregorian::min_date_time); // 最小可能日期
+	std::cout << "最小可能日期: " << d12 << std::endl;
+
 	return 0;
 }
