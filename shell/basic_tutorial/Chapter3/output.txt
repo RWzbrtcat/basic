@@ -1,0 +1,4 @@
+/home/lighthouse is a directory
+/home/wb is a directory
+/home/wst is a directory
+/home/www is a directory
