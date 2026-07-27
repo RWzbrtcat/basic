@@ -1,0 +1,24 @@
+#include <iostream>
+#include <boost/dynamic_bitset.hpp>
+#include <boost/utility/binary.hpp>
+
+int main()
+{
+	boost::dynamic_bitset<> db1; // 空的 dynamic_bitset
+	boost::dynamic_bitset<> db2(10); // 大小为 10 的dynamic_bitset
+	boost::dynamic_bitset<> db3(0x16, BOOST_BINARY(10101)); // 大小为22
+	// 字符串构造
+	boost::dynamic_bitset<> db4(std::string("0101"));
+	// 拷贝构造
+	boost::dynamic_bitset<> db5(db4);
+
+	boost::dynamic_bitset<> db6;
+	db6 = db3; //赋值操作符
+
+	// 转换为整数
+	std::cout << std::hex << db3.to_ulong() << std::endl;
+	// 使用 operator[]
+	std::cout << db4[0] << ", " << db4[1] << ", " << db4[2] << std::endl;
+
+	return 0;
+}
