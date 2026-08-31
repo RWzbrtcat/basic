@@ -1,0 +1,3 @@
+/home/wb/knowledges/cpp/multiThreads/build/CMakeFiles/threadpool01.dir
+/home/wb/knowledges/cpp/multiThreads/build/CMakeFiles/edit_cache.dir
+/home/wb/knowledges/cpp/multiThreads/build/CMakeFiles/rebuild_cache.dir

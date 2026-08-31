@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g CMakeFiles/threadpool01.dir/src/threadPool01.cpp.o CMakeFiles/threadpool01.dir/src/main01.cpp.o -o /home/wb/knowledges/cpp/multiThreads/bin/threadpool01 
